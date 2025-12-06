@@ -1,4 +1,12 @@
-# HI-LoRA: Hybrid Initialization Low-Rank Adaptaion(Dual-SVD Initialization for Structurally Aligned Low-Rank Adaptation)
+# HI-LoRA: Hybrid Initialization Low-Rank Adaptation (Dual-SVD Initialization for Structurally Aligned Low-Rank Adaptation)
+
+HI-LoRA (Hybrid Initialization for Low-Rank Adaptation) introduces a Dual-SVD initialization strategy that structurally aligns the LoRA update space with both representation geometry and task-conditioned supervision signals. Conventional LoRA fine-tuning relies on randomly initialized low-rank matrices, which can lead to early-stage information loss, gradient instability, and misalignment between pretrained feature subspaces and downstream task semantics.
+
+HI-LoRA addresses this limitation by combining Activation-SVD (capturing high-variance input feature structure) and Gradient-SVD (capturing task-specific supervision directions), enabling LoRA parameters to begin training from semantically meaningful, high-energy subspaces. This reduces early optimization collapse, accelerates convergence, and preserves adaptation efficiency without increasing inference-time costs.
+
+This repository serves as the supplementary official implementation accompanying the 2025 undergraduate thesis by Dongha Lee, focusing on structural information preservation and initialization strategies for parameter-efficient fine-tuning.
+
+---
 
 **Official Implementation — Supplementary Code for Undergraduate Thesis (2025)**  
 **Author:** Dongha Lee, Chung-Ang University — Department of Electrical & Electronics Engineering  
