@@ -1,0 +1,30 @@
+# HI-LoRA: Hybrid Initialization Low-Rank Adaptation
+# Verified package versions used for thesis experiments
+
+# Core deep learning stack
+torch==2.7.1
+transformers==4.45.0
+peft==0.17.0
+accelerate==1.9.0
+datasets==4.0.0
+sentencepiece==0.2.0
+
+# Numerical & data utilities
+numpy==2.2.6
+pandas==2.3.1
+scipy==1.15.3
+
+# Visualization & progress
+matplotlib==3.10.0
+tqdm==4.67.1
+
+# CLI & logging
+fire==0.7.0
+wandb==0.21.0
+
+# Hugging Face ecosystem
+huggingface-hub==0.34.1
+safetensors==0.5.3
+
+# Optional: for 8bit / 4bit quantization modes in utils.py
+bitsandbytes==0.46.1

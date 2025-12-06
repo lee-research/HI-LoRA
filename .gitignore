@@ -1,0 +1,72 @@
+# ===============================
+# HI-LoRA Project Git Ignore File
+# ===============================
+
+# ---- Python cache / build ----
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+build/
+dist/
+
+# ---- Virtual Environments ----
+.env
+.venv/
+venv/
+env/
+
+# ---- Logs / Debug ----
+logs/
+*.log
+debug/
+
+# ---- Jupyter ----
+.ipynb_checkpoints/
+
+# ---- Hugging Face / Transformers Cache ----
+huggingface/
+~/.cache/huggingface/
+*.safetensors
+*.bin
+
+# ---- PyTorch / Model Artifacts ----
+*.pt
+*.pth
+
+# ---- Experiment Outputs ----
+experiments/*
+!experiments/.gitkeep
+
+# ---- Dataset Cache ----
+data_cache/
+cache/
+*.cache
+
+# ---- WANDB ----
+wandb/
+*.wandb
+
+# ---- Results / Plots / Reports ----
+results/
+evaluation_results*/
+snapshot*/
+snapshot_hilora*/
+*.png
+*.csv
+*.json
+
+# ---- OS Specific ----
+.DS_Store
+Thumbs.db
+
+# ---- Editor / IDE ----
+.vscode/
+.idea/
+
+# ---- Misc ----
+*.tmp
+*.bak
+*.swp
